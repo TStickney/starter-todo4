@@ -27,9 +27,19 @@ Release Date: Oct 20, 2017
 
 ## *Version 1.3*
 ### Description
-    - 
+    - Added the ability to complete tasks (Job 8). -Taryn
 ### Updated Components
-    - 
+    - controllers/Views.php
+        - check if the user is the task owner and allow them to view their tasks
+        - update the task if it is marked completed
+    - views/by_priority.php
+        - Added a form to allow users to complete a task via checkbox.
+        - Added checkbox items to the table.
+    - core/Memory_Model.php
+        - Corrected an error from the upstream repo.
+    - README.md
+        - Updated with the latest application info.
+
 ## *Version 1.2*
 ### Description
     - 
