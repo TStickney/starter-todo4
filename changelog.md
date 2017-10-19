@@ -6,8 +6,54 @@ Team membership:
 
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
-Release Date: Oct 12, 2017
 
+Release Date: Oct 20, 2017
+## *Version 2.0*
+### Description
+    - 
+### Updated components
+    - 
+### New Components
+    - 
+
+## *Version 1.4*
+### Description
+    - 
+### Updated Components
+    - 
+
+### New Components
+    - 
+
+## *Version 1.3*
+### Description
+    - 
+### Updated Components
+    - 
+## *Version 1.2*
+### Description
+    - 
+### Updated Components
+    - 
+### New Components
+    -  
+
+## *Version 1.1*
+### Description
+    - Job 4 done (Terra)
+### Updated Components
+    - config.php (Terra)
+### New Components
+    - itemlist.php (Terra)
+    - Mtce.php (Terra)
+    - oneitem.php (Terra)
+
+
+
+
+
+
+Release Date: Oct 12, 2017
 ## *Version 1.0*
 ### Description
     - Completed Job 5
