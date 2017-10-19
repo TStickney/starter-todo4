@@ -22,21 +22,26 @@ Release Date: Oct 20, 2017
 ### Updated Components
     - 
 
-### New Components
-    - 
-
 ## *Version 1.3*
-### Description
-    - 
-### Updated Components
-    - 
-## *Version 1.2*
 ### Description
     - 
 ### Updated Components
     - 
 ### New Components
     -  
+
+
+## *Version 1.2*
+### Description
+    - Added pagination (Job 6) -Taryn
+### Updated Components
+    - controllers/Mtce.php
+        - Added the ability to display a certain number of items per page.
+    - views/itemlist.php
+        - Added the pagination element.
+### New Components
+    - views/itemnav.php
+        - Created the navigation for the pages.
 
 ## *Version 1.1*
 ### Description
