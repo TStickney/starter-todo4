@@ -17,16 +17,6 @@ Release Date: Oct 20, 2017
     - 
 
 ## *Version 1.4*
-### Description
-    - 
-### Updated Components
-    - 
-
-### New Components
-    - 
-
-## *Version 1.3*
-### Description
     - Added the ability to complete tasks (Job 8). -Taryn
 ### Updated Components
     - controllers/Views.php
@@ -40,13 +30,30 @@ Release Date: Oct 20, 2017
     - README.md
         - Updated with the latest application info.
 
+## *Version 1.3*
+### Description
+    - Job 7 done (Terra)
+### Updated Components
+    - constants.php
+    - _menubar.php
+    - .gitignore
+    - config.php
+    - autoload.php
+    - Mtce.php
+### New Components
+    -  controller/Roles.php
+
 ## *Version 1.2*
 ### Description
-    - 
+    - Added pagination (Job 6) -Taryn
 ### Updated Components
-    - 
+    - controllers/Mtce.php
+        - Added the ability to display a certain number of items per page.
+    - views/itemlist.php
+        - Added the pagination element.
 ### New Components
-    -  
+    - views/itemnav.php
+        - Created the navigation for the pages.
 
 ## *Version 1.1*
 ### Description
