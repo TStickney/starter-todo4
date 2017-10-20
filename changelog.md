@@ -10,11 +10,13 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 Release Date: Oct 20, 2017
 ## *Version 2.0*
 ### Description
-    - 
+    - Polished the adding of tasks. (Job 11) - Taryn
 ### Updated components
-    - 
-### New Components
-    - 
+    - controllers/Mtce.php
+        - Added ability to save the task's status, size, and group.
+    - views/itemedit.php
+        - Added the fields to the form to update status, size and group of 
+          new tasks. 
 
 ## *Version 1.4*
     - Added the ability to complete tasks (Job 8). -Taryn
