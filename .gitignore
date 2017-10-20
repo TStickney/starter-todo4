@@ -6,6 +6,7 @@
 !*/cache/.htaccess
 .metadata
 tmp/*
+public/tmp/*
 
 
 user_guide_src/build/*
