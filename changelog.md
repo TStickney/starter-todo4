@@ -24,12 +24,16 @@ Release Date: Oct 20, 2017
 
 ## *Version 1.3*
 ### Description
-    - 
+    - Job 7 done (Terra)
 ### Updated Components
-    - 
+    - constants.php
+    - _menubar.php
+    - .gitignore
+    - config.php
+    - autoload.php
+    - Mtce.php
 ### New Components
-    -  
-
+    -  controller/Roles.php
 
 ## *Version 1.2*
 ### Description
