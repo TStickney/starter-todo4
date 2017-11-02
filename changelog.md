@@ -6,8 +6,73 @@ Team membership:
 
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
-Release Date: Oct 12, 2017
 
+Release Date: Oct 20, 2017
+## *Version 2.0*
+### Description
+    - Polished the adding of tasks. (Job 11) - Taryn
+### Updated components
+    - controllers/Mtce.php
+        - Added ability to save the task's status, size, and group.
+    - views/itemedit.php
+        - Added the fields to the form to update status, size and group of 
+          new tasks. 
+
+## *Version 1.4*
+    - Added the ability to complete tasks (Job 8). -Taryn
+### Updated Components
+    - controllers/Views.php
+        - check if the user is the task owner and allow them to view their tasks
+        - update the task if it is marked completed
+    - views/by_priority.php
+        - Added a form to allow users to complete a task via checkbox.
+        - Added checkbox items to the table.
+    - core/Memory_Model.php
+        - Corrected an error from the upstream repo.
+    - README.md
+        - Updated with the latest application info.
+
+## *Version 1.3*
+### Description
+    - Job 7 done (Terra)
+### Updated Components
+    - constants.php
+    - _menubar.php
+    - .gitignore
+    - config.php
+    - autoload.php
+    - Mtce.php
+### New Components
+    -  controller/Roles.php
+
+## *Version 1.2*
+### Description
+    - Added pagination (Job 6) -Taryn
+### Updated Components
+    - controllers/Mtce.php
+        - Added the ability to display a certain number of items per page.
+    - views/itemlist.php
+        - Added the pagination element.
+### New Components
+    - views/itemnav.php
+        - Created the navigation for the pages.
+
+## *Version 1.1*
+### Description
+    - Job 4 done (Terra)
+### Updated Components
+    - config.php (Terra)
+### New Components
+    - itemlist.php (Terra)
+    - Mtce.php (Terra)
+    - oneitem.php (Terra)
+
+
+
+
+
+
+Release Date: Oct 12, 2017
 ## *Version 1.0*
 ### Description
     - Completed Job 5
