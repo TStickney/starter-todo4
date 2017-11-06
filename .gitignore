@@ -21,3 +21,6 @@ application/logs/*
 /vendor/
 /nbproject/private/
 /nbproject/
+
+#Ignore the unit test logs
+/tests/logs
