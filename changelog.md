@@ -7,6 +7,36 @@ Team membership:
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
 
+Release Date: Nov 18, 2017
+## *Version 3.0*
+### Description
+    - Updated the store() function to use XML (Job 3) - Terra
+    - Fixed a bug with create task. - Terra
+    - Found a way to properly format XML files via DOM - Terra
+### Updated components
+    - core/XML_Model.php
+        - Store function updated.
+        - Minor fix to load function.
+    
+
+## *Version 2.5*
+    - Created XML data (Job 1). -Taryn
+    - Created XML_Model with load() (Job 2). -Taryn
+### New Components
+    - core/XML_Model.php
+        - Created it, based off CSV_Model.php...
+        - Changed the load function to work with XML.
+### Updated Components
+    - models/Tasks.php
+        - Changed to extend XML_Model
+    
+
+
+
+
+
+
+
 Release Date: Oct 20, 2017
 ## *Version 2.0*
 ### Description

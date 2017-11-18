@@ -51,6 +51,7 @@ class XML_Model extends Memory_Model
             $this->xml = simplexml_load_file($this->_origin);           
             
             $this->fields = array("id", "task", "priority", "size", "group", "deadline", "status", "flag");
+            $this->_fields = $this->fields;
             
             foreach ($this->xml->tasks->item as $item) {
                 $record = new stdClass();
@@ -79,15 +80,42 @@ class XML_Model extends Memory_Model
 	{
 		// rebuild the keys table
 		$this->reindex();
-		//---------------------
-		if (($handle = fopen($this->_origin, "w")) !== FALSE)
-		{
-			fputcsv($handle, $this->_fields);
-			foreach ($this->_data as $key => $record)
-				fputcsv($handle, array_values((array) $record));
-			fclose($handle);
-		}
-		// --------------------
-	}
+                $this->fields = array("id", "task", "priority", "size", "group", "deadline", "status", "flag");
+            
+                $xmlInit = 
+                        "
+                        <xml>
+                            <tasks>
+                            </tasks>
+                        </xml>
+                        ";
+                $this->xml = simplexml_load_string($xmlInit);
 
+                //fput($handle, $this->_fields);
+                foreach ($this->_data as $item => $record) {
+                    $itemXML = $this->xml->tasks->addChild("item");
+                    foreach ($record as $key => $value) {
+                        if (isset($value)) {
+                            $itemXML->addChild($key, $value);
+                        } else {
+                            $itemXML->xml->item($key, ""); 
+                        }
+                    }
+                }  
+                $dom = new DOMDocument("1.0");
+                $dom->preserveWhiteSpace = false;
+                $dom->formatOutput = true;
+                $dom->loadXML($this->xml->asXML());
+                //$dom = dom_import_simplexml($this->xml)->ownerDocument;
+                $content = $dom->saveXML();
+                
+                //$this->xml->asXML($this->_origin . "2");
+                
+                if (($handle = fopen($this->_origin, "w")) !== FALSE)
+		{
+			fputs($handle, $content);
+			
+			fclose($handle);
+		}      
+	}
 }
